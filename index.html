@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-Up</title>
+    <link rel="stylesheet" href="./css.style.css">
+
+</head>
+
+<body>
+    <!-- una imagen en miniatura se llama thumbnail -->
+    <section>
+        <figure data-url="./images/news1.jpg" data-title="Las noticias de Lorem">
+            <img src="./images/news1.jpg" alt="news1">
+        </figure>
+        <figure data-url="./images/news2.jpg" data-title="Las noticias de Ipsum">
+            <img src="./images/news2.jpg" alt="news2">
+        </figure>
+    </section>
+
+
+    <!-- El pop ul para posicionarlo delante podemos utilizar zIndex o posicionamiento absoluto. en el momento que le doy pos. absoluto se pone por delante. -->
+    <div class="popup">
+        <div class="velo">
+            <figure>
+                <img src="./images/news1.jpg" alt="news1">
+                <figcaption>Titulo de la imagen</figcaption>
+                <p class="close">X</p>
+            </figure>
+        </div>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

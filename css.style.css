@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    cursor: pointer;
+}
+
+
+section {
+    max-width: 500px;
+    margin: 40px auto 0 auto;
+    display: flex;
+    gap: 10px;
+}
+
+/* maquetacion del popup */
+.popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+
+}
+
+.popup .velo {
+    background-color: rgba(0, 0, 0, .9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    opacity: 0;
+    /* Lo escondo con opacidad en vez de con display none ya que al none no le puedo dar transicion y la opacidad si. */
+    transition: 2s;
+}
+
+.popup .velo figure {
+    max-width: 700px;
+    height: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid salmon;
+    position: relative;
+}
+
+.popup .velo .close {
+    position: absolute;
+    top: -12.5px;
+    right: -12.5px;
+    padding: 7px 10.5px;
+    background-color: white;
+    border: 2px solid salmon;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+}
